@@ -12,8 +12,6 @@ export function swupTransitions() {
 
   const initPage = () => {
     setCursor();
-    FontsLoaded();
-    removeControlsVideo();
   }
 
   initPage();
