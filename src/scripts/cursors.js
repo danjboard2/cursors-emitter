@@ -4,7 +4,7 @@ import { isTouchDevices } from "./utils";
 export class Cursors{
 
   constructor(index) {
-    this.container = document.querySelector(`#cursor-${index}`);
+    this.container = document.querySelector(`#cursor-1`);
     this.links = document.querySelectorAll(`nav[role="navigation"] a`);
     this.link = this.links[index-1];
     this.boundsLinks = this.link.getBoundingClientRect();
@@ -15,7 +15,7 @@ export class Cursors{
     this.diff = { x: null,y: null };
     this.tinyCursor = true;
     this.transitionParticles = false;
-    this.cursor = false;
+    this.cursor = 1;
     this.activeLinks();
     this.mousemoveCursor();
     window.addEventListener('resize',(e) => this.init());
